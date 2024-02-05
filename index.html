@@ -14,6 +14,12 @@
             text-align: center;
             margin-top: 100px;
         }
+        .rounded-box {
+            background-color: rgba(0, 0, 0, 0.93);
+            border-radius: 15px;
+            padding: 20px;
+            margin: 20px;
+        }
         .btn-transparent {
             background-color: rgba(0, 123, 255, 0.73);
             color: #fff;
@@ -25,15 +31,17 @@
 </head>
 <body>
     <div class="container">
-        <h1>Redirect to one of our websites/socials</h1>
-        <button class="btn btn-transparent" onclick="redirectToDiscord()">
-            <img src="https://i.imgur.com/JdEg94j.png" alt="Discord Icon" width="30" height="30">
-            Discord
-        </button>
-        <button class="btn btn-transparent" onclick="redirectToStore()">
-            <img src="https://i.imgur.com/tRtQX3K.png" alt="Store Icon" width="30" height="30">
-            Store
-        </button>
+        <div class="rounded-box">
+            <h1>Redirect to one of our websites/socials</h1>
+            <button class="btn btn-transparent" onclick="redirectToDiscord()">
+                <img src="https://i.imgur.com/JdEg94j.png" alt="Discord Icon" width="30" height="30">
+                Discord
+            </button>
+            <button class="btn btn-transparent" onclick="redirectToStore()">
+                <img src="https://i.imgur.com/tRtQX3K.png" alt="Store Icon" width="30" height="30">
+                Store
+            </button>
+        </div>
     </div>
 
     <script>
