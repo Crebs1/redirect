@@ -2,15 +2,51 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            background-color: #f0f0f0; /* Set your desired background color */
+        }
+        .container {
+            text-align: center;
+            margin-top: 100px;
+        }
+        .btn-transparent {
+            background-color: rgba(0, 123, 255, 0.73);
+            color: #fff;
+            font-size: 18px;
+            font-family: 'Arial', sans-serif; /* Set your desired font */
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to the Website</h1>
+        <button class="btn btn-transparent" onclick="redirectToDiscord()">
+            <img src="https://assets-global.website-files.com/6257adef93867e50d84d30e2/636e0a6a49cf127bf92de1e2_icon_clyde_blurple_RGB.png" alt="Discord Icon" width="30" height="30">
+            Discord
+        </button>
+        <button class="btn btn-transparent" onclick="redirectToStore()">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ8vrsKP8Gq24G2gOAUg1rg3N59YsYs0uUCszPP7IICXQ&s" alt="Store Icon" width="30" height="30">
+            Store
+        </button>
+    </div>
+
     <script>
-        if (window.location.pathname === '/discord') {
+        function redirectToDiscord() {
             window.location.href = "https://discord.gg/Y6EQgKhbVZ";
-        } else {
+        }
+
+        function redirectToStore() {
             window.location.href = "https://store.catmc.lol";
         }
     </script>
-</head>
-<body>
-    <p>If you are not redirected, <a href="https://store.catmc.lol">visit the store</a>.</p>
+
+    <!-- Bootstrap JS and Popper.js -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.7/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
